@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 object RetrofitInstance {
   val api: ApiService by lazy {
     Retrofit.Builder()
-      .baseUrl("https://lgnlwf49-3000.brs.devtunnels.ms/api/")
+      .baseUrl("https://lgnlwf49-8080.brs.devtunnels.ms/")
       .addConverterFactory(GsonConverterFactory.create())
       .build()
       .create(ApiService::class.java)
